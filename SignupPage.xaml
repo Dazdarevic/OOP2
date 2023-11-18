@@ -1,0 +1,100 @@
+﻿<Page x:Class="OneTimePadAlgorithm.SignupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OneTimePadAlgorithm"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="900"
+      Title="SignupPage"
+      Background="Teal">
+
+    <Border Background="#2e3137"  CornerRadius="50" Width="450" Height="550">
+        <StackPanel Margin="20">
+            <Label Content="One Time Pad" Foreground="Teal"  FontFamily="Montserrat" FontSize="40" HorizontalAlignment="Center"
+                   FontWeight="Medium"/>
+
+            <Label Content="Username"
+                   Foreground="White" 
+                   FontSize="18" 
+                   FontFamily="Montserrat" 
+                   Margin="0,10,0,0"/>
+            <TextBox x:Name="txtUsername" 
+                     FontSize="19"
+                     FontFamily="Montserrat"
+                     Height="40"
+                     Margin="0,10,0,0" Background="white"
+                     Padding="5,8,0,0"/>
+            <Label Content="" x:Name="errorUsername"
+                   Foreground="PaleVioletRed" 
+                   FontSize="12" 
+                   FontFamily="Montserrat" 
+                   Margin="0,2,0,0"/>
+            <Label Content="Password"
+                   Foreground="White" 
+                   FontSize="18" 
+                   FontFamily="Montserrat" 
+                   Margin="0,10,0,0"/>
+            <PasswordBox  x:Name="txtPassword" 
+                     FontSize="19"
+                     FontFamily="Montserrat"
+                     Height="40" PasswordChar="*"
+                     Margin="0,10,0,0" Background="White"
+                     Padding="5,10,0,0"/>
+            <Label Content="" x:Name="errorPassword"
+                   Foreground="PaleVioletRed" 
+                   FontSize="12" 
+                   FontFamily="Montserrat" 
+                   Margin="0,2,0,0"/>
+            <StackPanel>
+                <Label Content="Role"
+                   Foreground="White" 
+                   FontSize="18" 
+                   FontFamily="Montserrat" 
+                   Margin="2,10,0,0"/>
+                <RadioButton Content="student"
+                             Foreground="White"
+                             FontSize="16"
+                             Margin="5,8,0,0"
+                             Padding="5,-5,0,0"
+                             x:Name="btnRadio1" IsChecked="True"/>
+                <RadioButton Content="admin"
+                             Foreground="White"
+                             FontSize="16"
+                             Margin="5,8,0,0"
+                             Padding="5,-5,0,0"
+                             x:Name="btnRadio2"/>
+            </StackPanel>
+            <Button x:Name="btnSingup"
+                    Margin="20,20,20,5"
+                    Height="50"
+                    Width="250"
+                    Content="Create account"
+                    FontSize="30"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    Background="Teal"
+                    Cursor="Hand"
+                    Click="btnSingup_Click"/>
+
+            <TextBlock Text="Already have an account?"
+                               Foreground="DarkGray"
+                               FontSize="18"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                       TextAlignment="Center"/>
+            <Button x:Name="btnLogin"
+                    Margin="0,0,0,0" 
+                    Height="30"
+                    Width="100"
+                    Content="Login"
+                    FontSize="19"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    Background="#2e3137"
+                    Cursor="Hand"
+                    Click="btnLogin_Click"
+                    BorderBrush="#2e3137"/>
+        </StackPanel>
+    </Border>
+</Page>

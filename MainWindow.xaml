@@ -1,0 +1,14 @@
+﻿<Window x:Class="OneTimePadAlgorithm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OneTimePadAlgorithm"
+        mc:Ignorable="d" Loaded="MyWindow_Loaded"
+        Title="One Time Pad Algorithm" Height="650" Width="900"
+        MouseDown="Window_MouseDown"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Frame x:Name="frame" Content="" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
